@@ -17,13 +17,15 @@ void draw(){
     
 background(255);
 
-   
+detect(100,200,100,200);
 fill(purple);
 square(100,100,100);
  
+detect(100,200,300,400);
 fill(blue);
 square(100,300,100);
 
+detect(100,200,500,600);
 fill(lemon);
 square(100,500,100);
 stroke(0);
@@ -46,10 +48,10 @@ void mouseReleased() {
 if(mouseX>100 && mouseX<200 && mouseY>100 && mouseY<200){
   selected_color = purple;
 }
-if(mouseX>300 && mouseX<400 && mouseY>300 && mouseY<400){
+if(mouseX>100 && mouseX<200 && mouseY>300 && mouseY<400){
   selected_color = blue;
 }
-if(mouseX>500 && mouseX<600 && mouseY>500 && mouseY<600){
+if(mouseX>100 && mouseX<200 && mouseY>500 && mouseY<600){
   selected_color = lemon;
 }
 
